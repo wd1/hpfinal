@@ -1,0 +1,76 @@
+.right{position:fixed;top:0;right:0;
+    background: rgba(255,255,255,0.95);
+    /*box-shadow:1px 1px 1px #EAEAEA,-1px 1px 1px #EAEAEA;*/
+    z-index:2;
+    height:2000px;
+    width:220px;
+    margin-top:60px;
+    display:none;}
+
+.right i{margin-right:10px;}
+
+.right a{color:#333;
+    display:block;
+    margin-top:20px;
+    margin-left:20px;
+    font-size:16px;
+    font-weight:100;
+    color:#2099bc;}
+
+.right a.on{color:#ff6c00;}
+.right a:hover{color:#ff6c00;}
+
+.right .nav-soc{display:inline-block;
+  margin-top:30px;}
+
+.bars-head {position:relative;
+  cursor:pointer;}
+
+.bars-head {padding-top:31px;
+  right:20px;}
+
+.bars-head span, .bars-head span:before, .bars-head span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 3px;
+  width: 20px;
+  background:#2099bc;
+  position: absolute;
+  display: block;
+  content: '';
+  cursor: pointer; 
+}
+
+.bars-head span:before {
+  top: -5px; 
+  cursor:pointer;
+}
+.bars-head span:after {
+  bottom: -5px;
+  cursor:pointer;
+}
+
+.bars-head span, .bars-head span:before, .bars-head span:after {
+  transition: all 400ms ease-in-out;
+}
+.bars-head.active span {
+  background-color: transparent;
+}
+.bars-head.active span:before, .bars-head.active span:after {
+  top: 0;
+}
+.bars-head.active span:before {
+  transform: rotate(45deg);
+}
+.bars-head.active span:after {
+  transform: rotate(-45deg);
+}
+
+.bars-cover{position:relative;
+  width:20px;
+  height:15px;
+  background:transparent;
+  cursor:pointer;
+  float:right;
+  top:26px;
+  z-index:1;}

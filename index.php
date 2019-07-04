@@ -1,0 +1,186 @@
+<?php include 'inc/INChead.php';$randal=rand(1,999);
+    //header("Expires: Mon, 26 Jul 2018 05:00:00 GMT");
+    header("Cache-Control: cache");
+    header("Pragma: cache");
+ 
+    echo "<link rel='stylesheet' type='text/css' href='css/1.css?version=".$randal."'>";
+    echo "<link rel='stylesheet' type='text/css' href='css/indexNav.css?version=".$randal."'>";
+?>
+<style type="text/css">
+	.title-block{box-shadow:none!important;}
+</style>
+<div class='rap' style='margin-top:75px'>
+
+
+<!--ADD MAILCHIMP AT START SO YOU GET SAME BEHAVIOR FOR ALL TILES-->
+<li style='display:none' class='newsletter' style='background:#2199bc;cursor:auto'><img class='draft' style='visibility:hidden' src='img/draft.png'/><div class='title-sblock'>newsletter</div><div class='lip-sblock'><div class='lip-stit'>Sign up to our email newsletter to have the best of optimistic news delivered direct to your inbox.</div>
+<!-- Begin MailChimp Signup Form --><div id='mc_embed_signup'><form action='//intridea.us7.list-manage.com/subscribe/post?u=060e9ce478d4bf4b205da26b9&amp;id=8bc45b6260' method='post' id='mc-embedded-subscribe-form' name='mc-embedded-subscribe-form' class='validate' target='_blank' novalidate><div id='mc_embed_signup_scroll'>
+<div class='mc-field-group'>
+	<input type='email' placeholder='Your email' value='' name='EMAIL' class='required email' id='mce-EMAIL'>
+	<input type='submit' value='Subscribe' name='subscribe' id='mc-embedded-subscribe' class='button subbb'>
+</div>
+	<div id='mce-responses' class='clear'>
+		<div class='response' id='mce-error-response' style='display:none'></div>
+		<div class='response' id='mce-success-response' style='display:none'></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style='position: absolute; left: -5000px;' aria-hidden='true'><input type='text' name='b_060e9ce478d4bf4b205da26b9_8bc45b6260' tabindex='-1' value=''></div>
+    
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));</script>
+<!--End mc_embed_signup--></div></li>
+<!--DONE WITH MAILCHIMP AT START-->
+
+
+<?php
+// include 'inc/con.php';
+$con=mysqli_connect('localhost','root','','custom');
+if($_GET[sid]==0){
+	$aes = mysqli_query($con,"SELECT * FROM cats WHERE id='$_GET[cid]' ");
+	while($aow = mysqli_fetch_array($aes)){ 
+		echo "<h1 data-cid='".$aow['id']."' class='hone'>".$aow['cat']."</h1>";
+		echo "<style>.tiptop{margin-top:25px;}</style>";
+	} 
+} else{
+	$aes = mysqli_query($con,"SELECT * FROM subcats INNER JOIN cats ON cats.id=subcats.catid WHERE cats.id='$_GET[cid]' AND subcats.id='$_GET[sid]'");
+	while($aow = mysqli_fetch_array($aes)){ 
+		echo "<h1 data-cid='".$_GET[cid]."' data-sid='".$_GET[sid]."' class='hone'>".$aow['cat']." <span>/</span> ".$aow['subcat']."</h1>";
+		echo "<style>.tiptop{margin-top:25px;}</style>";
+	}		
+}
+
+mysqli_close($con);
+
+include 'inc/conCouch.php';
+//Check the number of article pages that are published
+$pageCount;
+$aes = mysqli_query($con,"SELECT id FROM couch_pages WHERE template_id=11 AND publish_date <> '0000-00-00 00:00:00' ORDER BY publish_date DESC");
+while($aow = mysqli_fetch_array($aes)){ 
+	$pageCount++;
+}
+//Check the number of tiles that have order 6 or 7 that are published
+$aes = mysqli_query($con,"SELECT couch_data_text.value FROM couch_data_text INNER JOIN couch_pages ON couch_data_text.page_id=couch_pages.id WHERE couch_data_text.field_id=174 AND couch_pages.publish_date <> '0000-00-00 00:00:00' ");
+while($aow = mysqli_fetch_array($aes)){ 
+  if($aow['value']=='6' || $aow['value']=='7')
+  $sixorseven++;
+}
+//Number of runs to go through sets of 6 minus the first set of 6
+$runs = floor($pageCount/6)-1;
+//If number of order 6 or 7 blocks is less than value of runs use that.  Otherwise, you'll get into issues of repeating 6 tiles at the bottom of the page.  
+//NOTE: YOUR ALGORITHM FOR NOT REPEATING 6 BLOCKS IS IN PLACE BUT IT SHOULDN'T BE HIT BECAUSE OF YOUR SIXORSEVEN CHECK
+if($sixorseven<$runs){
+  $runs=$sixorseven;
+}
+
+include 'indexA.php';//First Six
+include 'indexB.php';//Second Six
+include 'indexC.php';//Third Six
+/*for($z=0;$z<$runs;$z++){
+	if($z % 2 == 0){
+		include 'indexB.php';//Odd
+	} else{
+		include 'indexC.php';//Even
+	}
+}*/
+mysqli_close($con);
+?>
+</div>
+<!--<div id='play-button' style='position:fixed;z-index:100000000000;display:none'></div><div id='pause-button' style='position:fixed;z-index:100000000000;display:none'></div>-->
+<div class='moody'>
+	<div class='moody-int'>
+		<i class='fa fa-times-circle topicFa'></i>
+	
+		<div class='moody-link'>
+
+		</div>
+	</div>
+</div>
+
+<div class='youtube-back'>
+    <iframe id="video" width="800" height="600" frameborder="0" allowfullscreen></iframe>
+	<i class='fa fa-times-circle youtubeFa'></i>
+</div>
+
+<div class='drawer' style='display:none'>
+  <i class='fa fa-times-circle drawerFa'></i>
+
+  <div class='soody-link'>
+  <?php
+  include 'inc/con.php';
+  $aes = mysqli_query($con,"SELECT * FROM cats ORDER BY cat ASC");
+  while($aow = mysqli_fetch_array($aes)){ 
+    echo "<a href='content?cid=".$aow['id']."' class='dl a".$aow['id']."' data-id='".$aow['id']."'>".$aow['cat']."</a>";
+  }
+  mysqli_close($con);
+  ?>
+  </div>
+</div>
+
+<script type='text/javascript'>
+$('.right-index').addClass('on');
+window.conte=$('.conte').val();
+window.sixconte=$('.sixconte').val();
+window.runs=$('.runs').val();
+
+window.section=3;
+
+//$('.rap a').each(function() {
+//    $(this).attr('target','_blank');
+//});
+
+
+
+
+
+$(document).on('click', '.topicFa', function(){
+    $('.moody').css('display','none');
+});
+
+
+$(document).on('click', '.moody-link a.tl', function(){
+    var tempo = $(this).attr('data-id');
+    var texto = $(this).text();
+    
+    $.ajax({
+        url:'inc/showSubs.php',
+        crossDomain:true,
+        dataType:'JSONP',
+        data:{tempo:tempo,texto:texto},
+        success:function(data){
+          if(data[0]==0){
+            location.href='index?cid='+data[1]+'&sid=0';
+          } else{
+            $('.moody-int').html(data[0]);  
+          }
+        }
+      }); 
+});
+
+$(document).on('click', '.back-sec', function(){
+    $('.browsetopics').trigger('click');
+});
+
+
+/*$(document).on('click', '.hone', function(){
+    var tempo = $(this).attr('data-cid');
+    var texto = $(this).text();
+    $('.moody').css('display','flex');
+    texto = texto.substring(0,texto.indexOf("/"));
+    $.ajax({
+        url:'inc/showBreadcrumb.php',
+        crossDomain:true,
+        dataType:'JSONP',
+        data:{tempo:tempo,texto:texto},
+        success:function(data){
+          $('.moody-int').html(data[0]);  
+        }
+      }); 
+});*/
+</script>
+<?php $randal=rand(1,999);echo "<script type='text/javascript' src='cjs/srcbtm.js?version=".$randal."'>'></script>";?>
+
+</body>
+</html>
+
+

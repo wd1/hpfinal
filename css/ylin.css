@@ -1,0 +1,319 @@
+.bl{color:#2099bc!important;}
+.gr{color:#5bac12!important;}
+.or{color:#ff6c00!important;}
+body,table,input,section,textarea,div,a,pre,a,ul,table,.bar-chart-1,.bar-chart-2{font-family:'proxima-nova',Arial, Helvetica, sans-serif;
+    margin:0;padding:0;
+    text-decoration:none;
+    list-style-type:none;
+    outline:none;}
+.highcharts-tooltip span {
+    /*width:200px!important;
+    overflow:auto;
+    white-space:normal !important;*/
+    z-index:1000000!important;
+}
+.rap1200{width:1200px;
+    margin:0 auto;
+    color:#333;}
+.rap700{width:700px;
+    margin:0 auto;
+    color:#333;}
+.fa-facebook{color:#3b5998;}
+.fa-twitter{color:#55acee;}
+
+.fa-reddit,
+.fa-reddit-square{color:#ff5700;}
+.fa-rss{color:#f26522;}
+.fa-google-plus{color:#dc4e41;}
+.fa-linkedin{color:#0077b5;}
+.fa-download{color:#ff6c00;}
+a{color:#2099bc;}
+.n{display:none;}
+.rap1200 p,
+.rap1200 ul{font-size:16px;
+	line-height:24px;}
+
+i{cursor:pointer;}
+
+.above1{margin-left:60px;}
+
+.above1 li{list-style-type:disc!important;
+	margin-bottom:10px;}
+
+.note{font-size:12px;
+    margin-top:10px;
+    margin-left:5px;
+    color:#ff6c00;
+    font-weight:300;}
+
+.im{min-width:50px;}
+
+.step{font-weight:700;
+    margin-top:30px;}
+.ylin-title{font-size:52px;
+    font-weight:700;
+    color:#333;
+    margin-top:60px;
+    margin-bottom:10px;}
+
+.ylin-tagline{font-size:32px;
+    color:#ff6c00;
+    font-weight:300;
+    padding-bottom:15px;
+    margin-bottom:15px;
+    border-bottom:4px solid #eee;}
+
+.ylin-country-wrap{display:inline-block;}
+
+.sel-coun-txt{display:block;
+    margin-bottom:10px;
+    margin-top:30px;}
+
+.sel-year,
+.sel-count,
+.sel-count2{display:inline-block;
+    font-size:16px; 
+    border:3px solid #ededed;
+    box-shadow:0 1px 1px #777;
+    margin:20px 0;
+    margin-right:15px;
+    width:305px;
+    height:37px;
+    background:#eee;
+    color:#555;}
+
+.sel-count2{margin-bottom:0px;}
+/*animation: blink 1s step-end infinite alternate;
+@keyframes blink {20% {border-color:#8ec2f5;}}*/
+
+.bar-chart-1,
+.bar-chart-2,
+.bar-chart-3,
+.bar-chart-4{display:block;
+    width:100%;
+    max-width:1200px;}
+
+.bar-chart-1,
+.bar-chart-2{font-weight:bold;}
+
+.bar-chart-2{margin-top:20px;}
+
+.bar-cont-2,
+.bar-cont-3,
+.bar-cont-4{margin-top:50px;}
+
+.bar-cont-2{margin-top:10px;}
+
+.table-cont-1,
+.table-cont-2{margin-top:25px;
+    margin-bottom:25px;}
+
+.four-block{float:left;
+    margin:20px auto;
+    margin-top:0px;}
+
+.view-change,
+.hide-change{font-size:15px; 
+    padding:10px; 
+    border:1px solid #CCC;
+    color:#555;
+    margin:20px 0;
+    margin-bottom:0px;
+    width:300px;
+    border-radius:4px;
+    display:block;
+    cursor:pointer;
+    background:#eee;
+    border:1px solid #ededed;
+    box-shadow:0 1px 1px #777;}
+
+.ylin-soc{margin:0 auto;
+    width:300px;
+	border-left:4px solid #eee;
+	margin-left:10px;
+	display:inline-block;
+	height:37px;}
+
+.ylin-soc i{display:inline-block;
+    padding:3px 20px;
+    margin-top:2px;
+	font-size:24px;}
+
+table{width:100%;
+    margin:0 auto;}
+
+
+table span{font-weight:600;
+    display:block;}
+.lef-down{margin-top:10px;}
+table a{color:#777;}
+th{background:#6a6a6a;
+    color:white;
+    font-weight:500;
+    text-align:left;
+    text-indent:15px;
+    cursor:pointer;}
+table th span{text-indent:15px;}
+table .th1{background:#2099bc;}
+table .th2{background:#ff6c00;}
+table .th3{background:#59a118;}
+table .th4{background:#ffcc00;}
+table .th5{background:#0a8b89;}
+table .th6{background:#3e4bf2;}
+
+table .th1 a,
+table .th2 a,
+table .th3 a,
+table .th4 a,
+table .th5 a,
+table .th6 a{color:white!important;}
+
+table th,
+table td{font-size:12px;
+    padding:10px 0px;
+    vertical-align:top;}
+table td{font-weight:300;
+    color:#777;
+    box-shadow:0px 1px 2px #cdcdcd;}
+
+table tr{background:#f6f6f6;}
+table tr:nth-child(odd){}
+table tr:nth-child(even){}
+
+.table-country{padding-left:15px;
+    padding-right:5px;}
+
+.tab{width:63px;
+    display:inline-block;
+    vertical-align:top;
+    margin-left:15px;
+    font-size:11px;}
+
+.lef-tab{border-right:1px solid #ff6c00;
+    padding-right:10px;
+    height:100%;}
+
+nav img{left:0px;}
+
+.bt-angle-left,
+.bt-angle-right{color:#333;
+    font-size:50px;
+    z-index:2;
+    position:relative;
+    top:275px;}
+
+.bt-angle-left{right:40px;}
+.bt-angle-right{float:right;
+    left:40px;}
+
+.table-cont-1,
+.table-cont-2,
+.three-block,
+.bar-cont-1,
+.bar-cont-2,
+.bar-cont-3,
+.bar-cont-4,
+.bar-chart-4,
+.hide-change,
+.four-block,
+.ylin-soc{display:none;}
+
+.bt-dismiss{color:#ff6c00;
+    display:none;}
+
+.bar-cont-1 .txt-sec,
+.four-block .txt-sec{margin-top:40px;
+    margin-bottom:40px;
+    width:1200px;}
+
+.start-small,
+.start-small-2{/*max-height:41px;
+    overflow:hidden;
+    transition: all 1s;*/
+    margin-bottom:0px;}
+
+.bar-cont-1 p,
+.four-block p{margin-bottom:0px;
+    margin-top:10px;}
+
+.click-more,
+.click-less,
+.click-more-2,
+.click-less-2{color:#4CB5FF;
+    cursor:pointer;}
+
+.click-less,
+.click-less-2,
+.ylin-hid{display:none;}
+
+.raptop{height:350px;}
+
+.bar-chart-1 .highcharts-legend-item tspan{cursor:auto;}
+.bar-chart-2 .highcharts-legend-item tspan:hover{fill:#ff6c00;}
+.country2wrap td{background:#e8e8e8;}
+
+
+
+@media screen and (max-width: 1200px){
+    .rap1200{width:90%;
+        margin-left:5%;}
+   
+    .above1{margin-left:20px;}
+    .ylin-soc{border-left:none;
+    	width:285px;}
+    
+    nav img{width:285px;}
+
+    .sel-count,
+    .sel-count2,
+    .sel-year{width:285px;
+    	margin-bottom:10px;
+    	font-size:15px;}
+
+    .ylin-soc2{margin-top:40px;}
+
+    table,
+    .note,
+    .bt-dismiss{display:none!important;}
+    
+    .highcharts-title{font-size:16px!important;}
+    /*.bar-chart-1,
+    .bar-chart-2{width:95%;}*/
+    
+    /*nav img{width:50%;}
+    .ylin-title{font-size:64px;}
+    .ylin-tagline{font-size:48px;
+    	padding-bottom:30px;}
+    .rap1200 p,
+    .rap1200 ul li{font-size:36px;
+    	line-height:44px;}
+
+	.sel-year,
+	.sel-count,
+	.sel-count2{
+		font-size:36px;
+		width:95%;
+		height:80px;
+	}
+
+	.sel-year{margin-bottom:60px;}
+	.ylin-soc{display:block;
+		display:none;
+		border-left:none;
+		margin-bottom:60px;
+		width:100%;
+		text-align:center;}
+	.ylin-soc i{font-size:44px;
+		text-align:center;
+		padding:25px 50px;}
+	.bt-dismiss{font-size:32px;}
+	.lef-tab{display:none;}*/
+
+    /*.ylin-country{width:240px;}
+    .sel-year{margin-left:0px;
+        width:263px;}
+    table{width:90%;}
+    .bar-chart-1,
+    .bar-chart-2{max-width:300px;}*/
+}
+

@@ -1,0 +1,228 @@
+.title-block{box-shadow:none!important;}
+#mce-success-response{font-size:9px;}
+
+.rap{width:1250px;   
+  margin-top:44px;}
+
+.btop{width:950px;height:225px;}
+.bleft,
+.cright{width:325px;
+  height:475px;}
+.bright,
+.cleft{width:625px;
+  height:475px;}
+
+
+.btop li,
+.bleft li,
+.cright li{width:300px;
+  height:225px;}
+
+.bright li,
+.cleft li{width:625px;
+  height:475px;}
+
+.title-block{bottom:470px;}
+.lip-block{bottom:650px;
+  width:290px;}
+.lip-txt{font-size:17px;
+  width:272px;
+  padding-top:10px;}
+.lip-date{}
+
+.title-sblock{bottom:225px;}
+.lip-stit{font-size:14px;
+  line-height:30px;
+  height:70px;
+  width:275px;}
+.lip-subtit{font-size:14px;
+  height:50px;
+  width:275px;
+  line-height:16px;}
+.lip-sblock{bottom:425px;}
+.lip-sdate{margin-top:14px;}
+
+.draft{bottom:225px;}
+.bigdraft{bottom:475px;}
+.bigtitle{bottom:970px;}
+
+.newsletter #mce-EMAIL{width:160px;}
+.newsletter .subbb{width:70px;}
+.btop{float:right;}
+.drawer{display:block;top:66px;left:auto;height:90vh;}
+
+.filta-wrap{display:none;width:950px;margin:0 auto;margin-top:60px;padding-bottom:20px;}
+.filta{float:right;font-size:24px;color:#ff6c00;cursor:pointer;}
+
+
+
+@media screen and (max-width:1270px){
+  .drawer{display:none;
+    left:0px;
+    top:0px;
+    padding-left:20px;
+    z-index:1000;
+    padding-top:15px;
+    height:100vh;}
+  .rap .btop{float:none;}
+  
+  .rap{width:950px;margin:0 auto;}
+
+  .filta-wrap{display:block;}
+
+  .rap h1.hone section{width:860px;}
+}
+
+
+@media screen and (max-width: 965px){
+  .btop{width:600px;
+    height:1365px;
+    margin:0 auto;}
+  .tiptop{margin-top:60px;}
+
+  .btop img{display:block;}
+  .bleft,
+  .cright{display:block;
+    width:600px;
+    height:910px;
+    margin:0 auto;}
+  
+  .btop li,
+  .bleft li,
+  .cright li,
+  .bright,
+  .bright li,
+  .cleft,
+  .cleft li{width:600px;
+    height:450px;
+    display:block;
+    margin:0 auto;}
+
+  .filta-wrap,
+  .rap{width:600px;}
+
+  .filta-wrap{padding-bottom:45px;}
+
+  .bright,
+  .cleft{height:455px;}
+
+  .cright li.have{
+    margin-left:0px;
+  } 
+  .bleft li.last,
+  .cright li.last{margin-top:0px;}
+
+  .draft{bottom:450px;}
+  .title-block{bottom:920px;}
+  .lip-block{bottom:875px;}
+  .lip-txt{font-size:23px;
+    width:370px;}
+  .lip-date{}
+
+  .title-sblock{bottom:450px;}
+  .lip-stit{font-size:27px;
+    line-height:36px;
+    height:70px;
+    height:140px;}
+  .lip-subtit{font-size:17px;
+    height:150px;}
+  .lip-sblock{bottom:850px;}
+    .lip-sdate{margin-top:45px;}
+    li{margin-top:5px!important;}
+
+}
+
+
+@media screen and (max-width: 650px){
+  #mce-success-response{font-size:11px;}
+  .btop{width:400px;
+    height:915px;}
+  
+  .btop li,
+  .bleft li,
+  .cright li,
+  .bright,
+  .bright li,
+  .cleft,
+  .cleft li{width:400px;
+    height:300px;}
+
+  .filta-wrap,.rap{width:400px;}
+
+  .bright,
+  .cleft{height:305px;}
+  
+  .bleft,
+  .cright{width:400px;
+    height:610px;}
+
+
+  .draft{bottom:300px;}
+  .title-block{bottom:620px;}
+  .lip-block{bottom:725px;}
+  .lip-txt{}
+  .lip-date{}
+
+  .title-sblock{bottom:300px;}
+  .lip-stit{font-size:23px;
+    line-height:30px;
+    height:110px;}
+  .lip-subtit{font-size:16px;
+    height:70px;}
+  .lip-sblock{bottom:570px;}
+    .lip-sdate{margin-top:23px;}
+
+  .rap h1.hone{width:400px;}
+
+
+  .rap h1.hone section{width:315px;}
+}
+
+@media screen and (max-width: 420px){
+  #mce-success-response{font-size:9px;}
+  .btop{width:300px;
+    height:690px;}
+  .btop li,
+  .bleft li,
+  .cright li,
+  .bright,
+  .bright li,
+  .cleft,
+  .cleft li{width:300px;
+    height:225px;}
+
+  .filta-wrap,.rap{width:300px;}
+
+
+  .bright,
+  .cleft{height:230px;}
+
+  .bleft,
+  .cright{width:300px;
+    height:460px;}
+
+  .draft{bottom:225px;}
+  .title-block{bottom:470px;}
+  .lip-block{bottom:650px;}
+  .lip-txt{font-size:16px; 
+    width:260px;}
+  .lip-date{}
+
+  .title-sblock{bottom:225px;}
+  .lip-stit{font-size:16px;
+    line-height:30px;
+    height:69px;}
+  .lip-subtit{font-size:14px;
+    height:50px;
+    line-height:17px;}
+  .lip-sblock{bottom:425px;}
+    .lip-sdate{margin-top:15px;}
+  .rap h1.hone{width:300px;}
+  .rap h1.hone section{width:300px;}
+  
+}
+
+
+
+
+

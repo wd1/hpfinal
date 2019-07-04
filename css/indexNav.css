@@ -1,0 +1,29 @@
+nav{width:1250px;}
+
+@media screen and (max-width: 1265px){
+  nav{width:950px;}
+  .search-bar-cont{width:950px;}
+}
+
+
+@media screen and (max-width: 965px){
+  nav{width:600px;}
+  .search-bar-cont{width:600px;}
+}
+
+
+@media screen and (max-width: 650px){
+  nav{width:400px;}
+  .search-bar-cont{width:400px;}
+}
+
+@media screen and (max-width: 420px){
+  nav{width:300px;}
+  .search-bar-cont{width:300px;}
+}
+
+
+
+
+
+

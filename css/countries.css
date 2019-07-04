@@ -1,0 +1,30 @@
+nav,header{display:none;}
+
+.country-list ul{margin-top:20px;margin-left:20px;cursor:pointer;}
+
+.outer li{margin-top:3px;font-size:11px;}
+.inner{display:none;}
+.outer .showing{display:block;transition:all 1s;-webkit-transition:all 1s;}
+
+.fa-pencil,
+.fa-plus{margin-left:5px;color:#2099bc;}
+
+.fa-plus{font-size:13px;}
+.outerli{display:inline-block;}
+
+
+.fa-times-circle{position:fixed;top:20px;right:27px;font-size:33px;color:#2099bc;}
+
+.editer,
+.adder{position:fixed;width:100%;height:100vh;top:0;left:0;margin:0 auto;text-align:center;background:rgba(0,0,0,.9);display:none;}
+
+.editer input,
+.adder input{width:300px;}
+
+.editer span,
+.adder span{color:#2099bc;padding-left:15px;cursor:pointer;display:inline-block;vertical-align:top;padding-top:2px;}
+
+.datasets,
+.regions{position:fixed;top:20px;right:20px;font-size:20px;}
+
+.regions{top:50px;}
